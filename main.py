@@ -19,7 +19,7 @@ from datetime import datetime
 import threading
 
 # Gemini API
-genai.configure(api_key="AIzaSyAtqvZdlly40dzpJ1jf3u3bgIUcevt94_M")
+genai.configure(api_key="your_api_key")
 model = genai.GenerativeModel("gemini-2.5-flash")
 
 # Initialize pygame mixer once at startup
@@ -314,4 +314,5 @@ if __name__ == "__main__":
         except sr.WaitTimeoutError:
             pass
         except Exception as e:
+
             print("Error:", e)
